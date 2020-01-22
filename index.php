@@ -1,5 +1,5 @@
 <?php
-    require_once('./admin/functions.php')
+    require_once('./admin/functions.php');
 
     // 
     $planetCollection = GetPlanetData($PDO);
