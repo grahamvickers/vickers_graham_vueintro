@@ -57,12 +57,8 @@
       <i>Click on a poster to preview the movie!</i>
     </p>
 
-    <section class="hidden-movies" :class="{ 'show-movie' : showDetails }"> 
-      <h3 class="movie-title">{{ videotitle }}</h3>
-      <video :src=" 'video/' + vidsource" controls autoplay></video>
-      <div class="movie-details">
-        <p>{{ videodescription }}</p>
-      </div>
+    <section class="hidden-movies" :class="{ 'show-movie' : showDetails }">
+      <player v-bind:movie="movie" />
     </section>
 
     <div class="up-arrow"><span>^</span></div>
