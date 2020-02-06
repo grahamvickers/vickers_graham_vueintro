@@ -1,8 +1,8 @@
 <?php 
 include('functions.php');
 
-if(isset($_GET["getUser"])){
-    $user = getUser($pdo);
+if(isset($_GET["getUsers"])){
+    $users = getUsers($pdo);
 
-    echo json_encode($user);
+    echo json_encode($users);
 }

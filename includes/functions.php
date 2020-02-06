@@ -1,7 +1,7 @@
 <?php
     include('connect.php');
 
-    function getUser($conn){
+    function getUsers($conn){
         $getData = 'SELECT * FROM tbl_users';
         $runQuery = $conn->query($getData);
 
